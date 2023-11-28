@@ -68,7 +68,7 @@ class MyApp extends StatelessWidget {
                         title: Text(
                           '+91 9519712703',
                           style: TextStyle(
-                              fontFamily: 'SourceCodePro', fontSize: 16),
+                              fontFamily: 'SourceCodePro',fontSize: 16),
                         ),
                       )),
                    Card(
@@ -82,7 +82,7 @@ class MyApp extends StatelessWidget {
                       title: Text(
                         '99hafizurrahman@gmail.com',
                         style: TextStyle(
-                            fontFamily: 'SourceCodePro', fontSize: 16),
+                            fontFamily: 'SourceCodePro',fontSize: 16),
                       ),
                     ),
                   ),
