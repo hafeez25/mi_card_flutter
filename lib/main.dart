@@ -45,12 +45,17 @@ class MyApp extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         letterSpacing: 2.5),
                   ),
-                  Divider(
+                  SizedBox(
                     height: 20,
-                    thickness: 2,
-                    indent: 60,
-                    endIndent: 60,
+                    child:Divider(
+                      height: 20,
+                      thickness: 2,
+                      indent: 100,
+                      endIndent: 100,
+                      color: Colors.white70,
+                    ),
                   ),
+
                    Card(
                       margin:
                           EdgeInsets.symmetric(vertical: 10, horizontal: 30),
