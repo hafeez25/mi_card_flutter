@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 60,
-                  backgroundImage: NetworkImage('url'),
+                  backgroundImage: AssetImage('images/hafizur.jpg'),
                 )
               ],
             ),
