@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
                         SizedBox(width: 20,),
                         Text(
                           '+91 9519712703',
-                          style: TextStyle(fontFamily: 'SourceCodePro'),
+                          style: TextStyle(fontFamily: 'SourceCodePro',fontSize: 16),
                         )
                       ],
                     ),
@@ -84,7 +84,7 @@ class MyApp extends StatelessWidget {
                         SizedBox(width: 20,),
                         Text(
                           '99hafizurrahman@gmail.com',
-                          style: TextStyle(fontFamily: 'SourceCodePro'),
+                          style: TextStyle(fontFamily: 'SourceCodePro',fontSize: 16),
                         )
                       ],
                     ),
