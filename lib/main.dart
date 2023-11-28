@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
           useMaterial3: true,
         ),
         home: Scaffold(
@@ -51,42 +51,57 @@ class MyApp extends StatelessWidget {
                     indent: 60,
                     endIndent: 60,
                   ),
-                  Container(
-                    color: Colors.white,
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-                    child: const Row(
-                      children: [
-                        Icon(
-                          Icons.call,
-                          color: Colors.teal,
-                          size: 32,
+                  Card(
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                    child: Container(
+                      color: Colors.white,
+                      child: const Padding(
+                        padding: EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.call,
+                              color: Colors.teal,
+                              size: 32,
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(
+                              '+91 9519712703',
+                              style: TextStyle(
+                                  fontFamily: 'SourceCodePro', fontSize: 16),
+                            )
+                          ],
                         ),
-                        SizedBox(width: 20,),
-                        Text(
-                          '+91 9519712703',
-                          style: TextStyle(fontFamily: 'SourceCodePro',fontSize: 16),
-                        )
-                      ],
+                      ),
                     ),
                   ),
-                  Container(
+                  Card(
                     color: Colors.white,
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-                    child: const Row(
-                      children: [
-                        Icon(
-                          Icons.email,
-                          color: Colors.teal,
-                          size: 32,
+                    margin: EdgeInsets.symmetric(vertical: 0, horizontal: 30),
+                    child: Container(
+                      color: Colors.white,
+                      child: const Padding(
+                        padding: EdgeInsets.all(20.0),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.email,
+                              color: Colors.teal,
+                              size: 32,
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(
+                              '99hafizurrahman@gmail.com',
+                              style: TextStyle(
+                                  fontFamily: 'SourceCodePro', fontSize: 16),
+                            )
+                          ],
                         ),
-                        SizedBox(width: 20,),
-                        Text(
-                          '99hafizurrahman@gmail.com',
-                          style: TextStyle(fontFamily: 'SourceCodePro',fontSize: 16),
-                        )
-                      ],
+                      ),
                     ),
                   ),
                 ],
