@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
           useMaterial3: true,
         ),
-        home: Scaffold(
+        home: const Scaffold(
           backgroundColor: Colors.teal,
           body: SafeArea(
             child: Center(
@@ -51,56 +51,33 @@ class MyApp extends StatelessWidget {
                     indent: 60,
                     endIndent: 60,
                   ),
-                  Card(
+                   Card(
+                      margin:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                      child: ListTile(
+                        leading: Icon(
+                          Icons.call,
+                          color: Colors.teal,
+                          size: 32,
+                        ),
+                        title: Text(
+                          '+91 9519712703',
+                          style: TextStyle(
+                              fontFamily: 'SourceCodePro', fontSize: 16),
+                        ),
+                      )),
+                   Card(
                     margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-                    child: Container(
-                      color: Colors.white,
-                      child: const Padding(
-                        padding: EdgeInsets.all(20.0),
-                        child: Row(
-                          children: [
-                            Icon(
-                              Icons.call,
-                              color: Colors.teal,
-                              size: 32,
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Text(
-                              '+91 9519712703',
-                              style: TextStyle(
-                                  fontFamily: 'SourceCodePro', fontSize: 16),
-                            )
-                          ],
-                        ),
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.email,
+                        size: 32,
+                        color: Colors.teal,
                       ),
-                    ),
-                  ),
-                  Card(
-                    color: Colors.white,
-                    margin: EdgeInsets.symmetric(vertical: 0, horizontal: 30),
-                    child: Container(
-                      color: Colors.white,
-                      child: const Padding(
-                        padding: EdgeInsets.all(20.0),
-                        child: Row(
-                          children: [
-                            Icon(
-                              Icons.email,
-                              color: Colors.teal,
-                              size: 32,
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Text(
-                              '99hafizurrahman@gmail.com',
-                              style: TextStyle(
-                                  fontFamily: 'SourceCodePro', fontSize: 16),
-                            )
-                          ],
-                        ),
+                      title: Text(
+                        '99hafizurrahman@gmail.com',
+                        style: TextStyle(
+                            fontFamily: 'SourceCodePro', fontSize: 16),
                       ),
                     ),
                   ),
